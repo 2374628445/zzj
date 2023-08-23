@@ -1,0 +1,59 @@
+{
+  "name": "dome8.17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-test": "vue-cli-service build -build-test",
+    "lint": "vue-cli-service lint --fix",
+    "commit": "./node_modules/cz-customizable/standalone.js",
+    "prepare": "./node_modules/.bin/husky install",
+    "webpack-rules": "vue inspect --rules > webpack.default.rules.txt",
+    "webpack-plugins": "vue inspect --plugins > webpack.default.plugins.txt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "agentkeepalive": "^4.5.0",
+    "axios": "^1.4.0",
+    "clipboard": "^2.0.11",
+    "element-plus": "2.3.7",
+    "vue": "3.2.13",
+    "vue-class-component": "^8.0.0-0",
+    "vue-clipboard2": "^0.3.3",
+    "vue-clipboard3": "^2.0.0",
+    "vue-router": "4.0.3",
+    "vuex": "4.0.0",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "9.1.0",
+    "clean-webpack-plugin": "4.0.0",
+    "cz-customizable": "7.0.0",
+    "eslint": "7.32.0",
+    "eslint-plugin-vue": "8.0.3",
+    "fork-ts-checker-webpack-plugin": "8.0.0",
+    "husky": "8.0.3",
+    "less": "4.0.0",
+    "less-loader": "8.0.0",
+    "style-resources-loader": "1.5.0",
+    "typescript": "~4.5.5",
+    "webpack-bundle-analyzer": "4.9.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
